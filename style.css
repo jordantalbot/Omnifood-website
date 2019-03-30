@@ -8,13 +8,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -31,7 +33,7 @@ html {
 
 .row {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 1872px;
 }
 
 section {
@@ -492,6 +494,8 @@ input[type=checkbox] {
 
 footer {
     background-color: #333;
+    padding: 50px;
+    font-size: 80%;
 }
 
 .footer-nav {
@@ -503,3 +507,63 @@ footer {
     list-style: none;
     float: right;
 }
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.logo-facebook,
+.logo-twitter,
+.logo-googleplus,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.logo-instagram:hover {
+    color: #517fa4;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
